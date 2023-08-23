@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -21,12 +22,12 @@
     <header class="header">
       <div class="container header-wrap">
         <nav class="header-nav">
-          <a href="/"
-            ><img src="./img/logo.svg" alt="" width="40" class="logo"
+          <a href=""
+            ><img src="./img/logo.svg" alt="" width="69" class="logo"
           /></a>
           <ul class="header-list list">
             <li class="header-item">
-              <a href="" class="header-link link">About</a>
+              <a href="" class="header-link link active">About</a>
             </li>
             <li class="header-item">
               <a href="#prices" class="header-link link">Prices</a>
@@ -43,7 +44,7 @@
           <a href="" tel:+3800506020 class="header-tel link"
             >+380-050-600-20-20</a
           >
-          <button type="button" class="header-btn btn link">
+          <button type="button" class="header-btn btn link" data-modal-open>
             Online booking
           </button>
         </div>
@@ -52,32 +53,34 @@
 
     <main>
       <!-- hero -->
-      <section class="hero section">
+      <section class="hero">
         <div class="container hero-container">
-          <ul class="hero-list list">
-            <li class="hero-item">
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="hero-link link"
-                >Instagram</a
-              >
-            </li>
-            <li class="hero-item">
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="hero-link link"
-                >Youtube</a
-              >
-            </li>
-          </ul>
+          <div class="hero-social-wrap">
+            <ul class="hero-list list">
+              <li class="hero-item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="hero-link link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero-item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="hero-link link"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
 
           <div class="hero-wrap">
             <p class="hero-pre-title pre">A hair salon for men</p>
-            <h1 class="hero-title">Barbershop</h1>
+            <h1 class="hero-title" data-aos="zoom-in">Barbershop</h1>
             <p class="hero-after-title after">
               We work quickly, carefully and with style
             </p>
@@ -99,7 +102,9 @@
 
           <div class="about-wrap">
             <p class="about-pre-title pre">About</p>
-            <h2 class="about-title title">Best Barbers in your city</h2>
+            <h2 class="about-title title" data-aos="zoom-in-right">
+              Best Barbers in your city
+            </h2>
             <p class="about-after-title after">
               If you want to add more confidence to your image, you should
               definitely visit us.
@@ -122,7 +127,9 @@
           <p class="service-pre-title pre">
             Spend your time with the best masters
           </p>
-          <h2 class="service-title title">Services and prices</h2>
+          <h2 class="service-title title" data-aos="zoom-in-right">
+            Services and prices
+          </h2>
           <div class="service-wrap">
             <ul class="service-list list">
               <li class="service-item">
@@ -167,7 +174,7 @@
 
       <!-- INFO -->
       <section class="info section">
-        <div class="container">
+        <div class="container info-container">
           <ul class="info-list list">
             <li class="info-item">
               <span class="num">600</span>
@@ -186,13 +193,16 @@
               <p class="info-item-text">Gifts for regular customers</p>
             </li>
           </ul>
-
-          <p class="info-pre-title pre">Old traditional school</p>
-          <h2 class="info-title title">Why people come to us?</h2>
-          <p class="info-after-title after">
-            Only good things are said about us.But it's better to see and feel 1
-            time than read 10 times
-          </p>
+          <div class="info-wrap">
+            <p class="info-pre-title pre">Old traditional school</p>
+            <h2 class="info-title title" data-aos="zoom-in-right">
+              Why people come to us?
+            </h2>
+            <p class="info-after-title after">
+              Only good things are said about us.But it's better to see and feel
+              1 time than read 10 times
+            </p>
+          </div>
         </div>
       </section>
 
@@ -202,11 +212,25 @@
           <p class="barbers-pre-title pre">
             For true enjoyers of the atmosphere
           </p>
-          <h2 class="barbers-title title">Our barbers</h2>
+          <h2 class="barbers-title title" data-aos="zoom-in-right">
+            Our barbers
+          </h2>
           <ul class="barbers-list list">
             <li class="barbers-item">
-        
-              <img src="./img/men01.jpg" alt="John Smith" height="346" />
+              <div class="barbers-desc-wrap">
+                <img
+                  src="./img/men01.jpg"
+                  alt="John Smith"
+                  width="370"
+                  height="346"
+                />
+                <p class="barbers-img-desc">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Ipsam accusantium quam magni totam nemo, nesciunt quasi
+                  ratione! Minima, tenetur vel.
+                </p>
+              </div>
+
               <h3 class="barbers-item-title">John Smith</h3>
               <p class="barbers-item-text">Extreme Barber</p>
               <ul class="barbers-soc-list list">
@@ -237,7 +261,12 @@
               </ul>
             </li>
             <li class="barbers-item">
-              <img src="./img/men2.jpg" alt="Michele Doe" height="346"/>
+              <img
+                src="./img/men2.jpg"
+                alt="Michele Doe"
+                width="370"
+                height="346"
+              />
               <h3 class="barbers-item-title">Michele Doe</h3>
               <p class="barbers-item-text">Extreme Barber</p>
               <ul class="barbers-soc-list list">
@@ -268,7 +297,12 @@
               </ul>
             </li>
             <li class="barbers-item">
-              <img src="./img/men3.jpg" alt="Alan Black" height="346"/>
+              <img
+                src="./img/men3.jpg"
+                alt="Alan Black"
+                width="370"
+                height="346"
+              />
               <h3 class="barbers-item-title">Alan Black</h3>
               <p class="barbers-item-text">Extreme Barber</p>
               <ul class="barbers-soc-list list">
@@ -308,17 +342,37 @@
           <p class="gallery-pre-title pre">In latin, "barba" means "beard</p>
           <ul class="gallery-list list">
             <li class="gallery-item">
-              <img src="./img/egz-1.jpg" alt="gallery barber" height="360
-            "/>
+              <img
+                src="./img/egz-1.jpg"
+                alt="gallery barber"
+                width="270"
+                height="360
+                            "
+              />
             </li>
             <li class="gallery-item">
-              <img src="./img/egz-2.jpg" alt="gallery barber" height="360"/>
+              <img
+                src="./img/egz-2.jpg"
+                alt="gallery barber"
+                width="270"
+                height="360"
+              />
             </li>
             <li class="gallery-item">
-              <img src="./img/egz-3.jpg" alt="gallery barber" height="360"/>
+              <img
+                src="./img/egz-3.jpg"
+                alt="gallery barber"
+                width="270"
+                height="360"
+              />
             </li>
             <li class="gallery-item">
-              <img src="./img/egz-4.jpg" alt="gallery barber" height="360"/>
+              <img
+                src="./img/egz-4.jpg"
+                alt="gallery barber"
+                width="270"
+                height="360"
+              />
             </li>
           </ul>
         </div>
@@ -373,5 +427,19 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="btn-close" data-modal-close>
+          <svg class="btn-close-icon" width="10" height="10">
+            <use href="./img/icons.svg#icon-x"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
