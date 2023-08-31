@@ -582,18 +582,20 @@ img {
 }
 
 /* INFO_FOOTER */
-
+.contact-section {
+  background-color: #191c26;
+}
 .contact-container {
   display: flex;
-  background-color: #191c26;
-  padding-top: 130px;
-  padding-bottom: 110px;
 }
 
 .left-side-wrap {
+  width: calc(50% + 15px);
+  padding-top: 130px;
+  padding-bottom: 110px;
+  padding-right: 30px;
 }
-.title {
-}
+
 .booking-title {
   color: #fff;
   font-weight: 700;
@@ -602,11 +604,14 @@ img {
   margin-bottom: 40px;
 }
 .booking-form {
+  display: flex;
+  flex-direction: column;
 }
 
 .input-booking-wrap {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .input {
   color: rgba(157, 164, 189, 0.4);
@@ -619,21 +624,41 @@ img {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  outline: transparent;
   margin-bottom: 44px;
+  width: 270px;
+  height: 24px;
 }
+
+.input:focus {
+  border-color: #fff;
+}
+
+.input:focus::placeholder {
+  color: #fff;
+}
+
 .booking-textarea {
+  height: 76px;
   width: 100%;
+  resize: none;
 }
 .form-btn {
+  width: 160px;
 }
 
 .right-side-wrap {
   background-image: url(../img/contact-bg.jpg);
+  width: calc(50% + 15px);
+  padding-left: 100px;
+  padding-top: 130px;
+  padding-bottom: 110px;
 }
 
 .footer-address {
   margin-bottom: 20px;
 }
+
 .address-link {
   color: #9da4bd;
   font-family: Open Sans;
@@ -643,6 +668,7 @@ img {
   line-height: 1.6;
   letter-spacing: 0.36px;
 }
+
 .footer-contact-list {
   margin-bottom: 70px;
 }
@@ -653,6 +679,7 @@ img {
   align-items: center;
   gap: 16px;
 }
+
 .footer-contact-link {
   color: #9da4bd;
   font-family: Open Sans;
@@ -670,6 +697,17 @@ img {
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-text::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.4);
+  display: block;
+  margin-right: 20px;
 }
 .contact-second-text {
   color: #9da4bd;
@@ -702,6 +740,7 @@ img {
 .footer-list {
   display: flex;
   gap: 40px;
+  align-items: center;
 }
 
 .footer-list::before {
