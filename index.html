@@ -22,12 +22,18 @@
     <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-wrap">
         <nav class="header-nav">
           <a href=""
-            ><img src="./img/logo.svg" alt="" width="69" class="logo"
-          /></a>
+            ><svg class="logo-icon">
+              <use
+                href="./img/icons.svg#icon-logo"
+                width="68"
+                height="58"
+              ></use>
+            </svg>
+          </a>
           <ul class="header-list list">
             <li class="header-item">
               <a href="" class="header-link link active">About</a>
@@ -51,12 +57,84 @@
             Online booking
           </button>
         </div>
+      <button type="button" class="menu-open-btn">
+        <svg class="menu-open-icon" width="32" height="22">
+          <use href="./img/icons.svg#icon-email"></use>
+        </svg>
+      </button>
       </div>
-    </header> -->
+
+<div class="menu">
+        <div class="container">
+          <button type="button" class="menu-close-btn">
+          <svg class="menu-close-icon" width="32" height="22">
+            <use href="./img/icons.svg#icon-x"></use>
+          </svg>
+                </button>
+             <div class="container menu-wrap">
+          <nav class="menu-nav">
+            <a href=""
+              ><svg class="logo-icon">
+                <use
+                  href="./img/icons.svg#icon-logo"
+                  width="68"
+                  height="58"
+                ></use>
+              </svg>
+            </a>
+            <ul class="menu-list list">
+              <li class="menu-item">
+                <a href="" class="menu-link link active">About</a>
+              </li>
+              <li class="menu-item">
+                <a href="#prices" class="menu-link link">Prices</a>
+              </li>
+              <li class="menu-item">
+                <a href="#barbers" class="menu-link link">Barbers</a>
+              </li>
+              <li class="menu-item">
+                <a href="" class="menu-link link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-contact">
+            <a href="tel:+380506002020" class="menu-tel link"
+              >+380-050-600-20-20</a
+            >
+            <button type="button" class="menu-btn btn link" data-modal-open>
+              Online booking
+            </button>
+          </div>
+           <div class="menu-social-wrap">
+              <ul class="menu-soc-list list">
+                <li class="menu-soc-item">
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="menu-soc-link link"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="menu-soc-item">
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="menu-soc-link link"
+                    >Youtube</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+    </header>
 
     <main>
       <!-- hero -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero-container">
           <div class="hero-social-wrap">
             <ul class="hero-list list">
@@ -85,11 +163,12 @@
             <p class="hero-pre-title pre">A hair salon for men</p>
             <h1 class="hero-title" data-aos="zoom-in">Barbershop</h1>
             <p class="hero-after-title after">
-              We work quickly, carefully and with style
+              We are experts in trendy men’s haircuts. We work quickly,
+              carefully and with style.
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- about -->
       <!-- <section class="about section">
@@ -210,7 +289,7 @@
       </section> -->
 
       <!-- our barbers -->
-      <section class="barbers section" id="barbers">
+      <!-- <section class="barbers section" id="barbers">
         <div class="container">
           <p class="barbers-pre-title pre">
             For true enjoyers of the atmosphere
@@ -337,49 +416,139 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- gallery -->
-      <section class="gallery section">
+      <!-- gallery DONE -->
+      <!-- <section class="gallery section">
         <div class="container gallery-container">
           <p class="gallery-pre-title pre">In latin, "barba" means "beard</p>
           <ul class="gallery-list list">
             <li class="gallery-item">
-              <img
-                src="./img/egz-1.jpg"
-                alt="gallery barber"
-                width="270"
-                height="360
-                            "
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/gallery-1-desk.jpg    1x,
+                    ./img/gallery-1-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/gallery-1-tab.jpg    1x,
+                    ./img/gallery-1-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/gallery-1-mob.jpg    1x,
+                    ./img/gallery-1-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./img/gallery-1-desk.jpg"
+                  alt="gallery barber"
+                  width="418"
+                />
+              </picture>
+            </li>
+
+            <li class="gallery-item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/gallery-2-desk.jpg    1x,
+                    ./img/gallery-2-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/gallery-2-tab.jpg    1x,
+                    ./img/gallery-2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/gallery-2-mob.jpg    1x,
+                    ./img/gallery-2-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./img/gallery-2-desk.jpg"
+                  alt="gallery barber"
+                  width="418"
+                />
+              </picture>
             </li>
             <li class="gallery-item">
-              <img
-                src="./img/egz-2.jpg"
-                alt="gallery barber"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/gallery-3-desk.jpg    1x,
+                    ./img/gallery-3-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/gallery-3-tab.jpg    1x,
+                    ./img/gallery-3-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/gallery-3-mob.jpg    1x,
+                    ./img/gallery-3-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./img/gallery-3-desk.jpg"
+                  alt=""
+                  width="418"
+                  height="360"
+                />
+              </picture>
             </li>
             <li class="gallery-item">
-              <img
-                src="./img/egz-3.jpg"
-                alt="gallery barber"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./img/egz-4.jpg"
-                alt="gallery barber"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/gallery-4-desk.jpg    1x,
+                    ./img/gallery-4-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/gallery-4-tab.jpg    1x,
+                    ./img/gallery-4-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/gallery-4-mob.jpg    1x,
+                    ./img/gallery-4-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./img/gallery-4-desk.jpg"
+                  alt="gallery barber"
+                  width="418"
+                />
+              </picture>
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- online booking -->
 

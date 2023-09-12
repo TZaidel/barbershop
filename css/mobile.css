@@ -1,13 +1,17 @@
-
 @media screen and (min-width: 480px) {
   .container {
     width: 448px;
   }
 
+  /* HERO */
+
+  .hero-wrap {
+    padding: 210px 30px;
+  }
+
   /* GALLERY */
 
-  .barbers-item{
-          /* width: 370px; */
-
+  .barbers-item {
+    /* width: 370px; */
   }
 }
