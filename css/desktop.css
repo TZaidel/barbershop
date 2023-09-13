@@ -43,6 +43,24 @@
     gap: 43px;
   }
 
+  /* ABOUT */
+  .about-item {
+    width: 270px;
+  }
+
+  /* SERVICE */
+  .service-list {
+    width: calc((100% - 30px) / 2);
+  }
+
+  /* INFO */
+  .info-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 130px;
+  }
+
   /* BARBERS */
 
   .barbers > .container {
@@ -50,6 +68,10 @@
   }
   .barbers-item {
     width: calc((100% - 60px) / 3);
+  }
+
+  .barbers-item {
+    box-shadow: 2px 2px 5px 2px rgba(126, 126, 126, 0.229);
   }
 
   /* GALLERY */
@@ -60,5 +82,26 @@
 
   .gallery-item {
     width: calc((100% - 90px) / 4);
+  }
+
+  /* BOOKING CONTACT */
+
+  .booking-contact-wrap {
+    max-width: 1600px;
+    background-color: #191c26;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-position: right;
+    background-size: calc(50% - 15px) 100%;
+  }
+
+  .booking-container {
+    min-width: 600px;
+    width: calc(50% + 15px);
+  }
+
+  .contact-container {
+    width: calc(50% + 15px);
   }
 }

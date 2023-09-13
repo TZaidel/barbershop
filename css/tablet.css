@@ -54,6 +54,10 @@
     letter-spacing: 1.2px;
   }
 
+  .menu-open-btn {
+    display: none;
+  }
+
   /* HERO */
   .hero-container {
     padding-left: 15px;
@@ -129,20 +133,43 @@
   }
 
   .about-item {
-    width: 270px;
-    height: 445px;
-  }
-
-  .about-item > img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 330px;
   }
 
   /* SERVICE */
+  .service-item p {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 
   /* INFO */
+  .info-list {
+    margin-left: auto;
+  }
+
+  .booking-title {
+    text-align-last: left;
+  }
+
+  .input-booking-wrap {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .booking-input {
+    width: 270px;
+  }
+
+  .form-btn {
+    margin-left: 0;
+  }
+
+  .contact-wrap {
+    display: flex;
+
+    justify-content: space-between;
+    gap: 50px;
+  }
 
   /* BARBERS */
   .barbers > .container {

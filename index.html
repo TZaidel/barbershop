@@ -57,31 +57,22 @@
             Online booking
           </button>
         </div>
-      <button type="button" class="menu-open-btn">
-        <svg class="menu-open-icon" width="32" height="22">
-          <use href="./img/icons.svg#icon-email"></use>
-        </svg>
-      </button>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="menu-open-icon" width="40" height="40">
+            <use href="./img/icons.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
       </div>
 
-<div class="menu">
+      <div class="menu is-hidden" data-menu>
         <div class="container">
-          <button type="button" class="menu-close-btn">
-          <svg class="menu-close-icon" width="32" height="22">
-            <use href="./img/icons.svg#icon-x"></use>
-          </svg>
-                </button>
-             <div class="container menu-wrap">
-          <nav class="menu-nav">
-            <a href=""
-              ><svg class="logo-icon">
-                <use
-                  href="./img/icons.svg#icon-logo"
-                  width="68"
-                  height="58"
-                ></use>
+          <div>
+            <button type="button" class="menu-close-btn" data-menu-close>
+              <svg class="menu-close-icon" width="20" height="20">
+                <use href="./img/icons.svg#icon-x"></use>
               </svg>
-            </a>
+            </button>
+
             <ul class="menu-list list">
               <li class="menu-item">
                 <a href="" class="menu-link link active">About</a>
@@ -96,16 +87,18 @@
                 <a href="" class="menu-link link">Contacts</a>
               </li>
             </ul>
-          </nav>
-          <div class="menu-contact">
-            <a href="tel:+380506002020" class="menu-tel link"
-              >+380-050-600-20-20</a
-            >
-            <button type="button" class="menu-btn btn link" data-modal-open>
-              Online booking
-            </button>
           </div>
-           <div class="menu-social-wrap">
+
+          <div>
+            <div class="menu-contact">
+              <a href="tel:+380506002020" class="menu-tel link"
+                >+380-050-600-20-20</a
+              >
+              <button type="button" class="menu-btn btn link" data-modal-open>
+                Online booking
+              </button>
+            </div>
+            <div class="menu-social-wrap">
               <ul class="menu-soc-list list">
                 <li class="menu-soc-item">
                   <a
@@ -129,7 +122,7 @@
             </div>
           </div>
         </div>
-
+      </div>
     </header>
 
     <main>
@@ -170,15 +163,37 @@
         </div>
       </section>
 
-      <!-- about -->
-      <!-- <section class="about section">
+      <!-- about DONE+- !!!!!!!!IMG-->
+      <section class="about section">
         <div class="container about-container">
           <ul class="about-list list">
             <li class="about-item">
-              <img src="./img/Michael.jpg" alt="" width="270" height="445" />
+              <picture>
+                <source
+                  srcset="./img/best-bar-1-desk.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/best-bar-1-tab.jpg"
+                  media="(min-width: 768px)"
+                />
+
+                <img src="./img/best-bar-1-desk.jpg" alt="" width="330" />
+              </picture>
             </li>
             <li class="about-item">
-              <img src="./img/Simon.jpg" alt="" width="270" height="445" />
+              <picture>
+                <source
+                  srcset="./img/best-bar-2-desk.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/best-bar-2-tab.jpg"
+                  media="(min-width: 768px)"
+                />
+
+                <img src="./img/best-bar-2-desk.jpg" alt="" width="330" />
+              </picture>
             </li>
           </ul>
 
@@ -201,10 +216,10 @@
             <button type="button" class="about-btn btn">Online booking</button>
           </div>
         </div>
-      </section> -->
+      </section>
 
-      <!-- services and prices -->
-      <!-- <section class="service section" id="prices">
+      <!-- services and prices !!!!!!!!!!!!!!as soon as posible-->
+      <section class="service section" id="prices">
         <div class="container">
           <p class="service-pre-title pre">
             Spend your time with the best masters
@@ -252,10 +267,10 @@
           </div>
           <button type="button" class="service-btn btn">Online booking</button>
         </div>
-      </section> -->
+      </section>
 
-      <!-- INFO -->
-      <!-- <section class="info section">
+      <!-- INFO DONE-->
+      <section class="info section">
         <div class="container info-container">
           <ul class="info-list list">
             <li class="info-item">
@@ -281,15 +296,15 @@
               Why people come to us?
             </h2>
             <p class="info-after-title after">
-              Only good things are said about us.But it's better to see and feel
+              Only good things are said about us. But it's better to see and feel
               1 time than read 10 times
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
 
-      <!-- our barbers -->
-      <!-- <section class="barbers section" id="barbers">
+      <!-- our barbers DONE-->
+      <section class="barbers section" id="barbers">
         <div class="container">
           <p class="barbers-pre-title pre">
             For true enjoyers of the atmosphere
@@ -299,19 +314,35 @@
           </h2>
           <ul class="barbers-list list">
             <li class="barbers-item">
-              <div class="barbers-desc-wrap">
+              <picture></picture>
+                <source
+                  srcset="
+                    ./img/barber-1-desk.jpg    1x,
+                    ./img/barber-1-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/barber-1-tab.jpg    1x,
+                    ./img/barber-1-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/barber-1-mob.jpg    1x,
+                    ./img/barber-1-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
                 <img
-                  src="./img/men01.jpg"
+                  src="./img/barber-1-desk.jpg"
                   alt="John Smith"
-                  width="370"
+                  width="450"
                   height="346"
                 />
-                <p class="barbers-img-desc">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Ipsam accusantium quam magni totam nemo, nesciunt quasi
-                  ratione! Minima, tenetur vel.
-                </p>
-              </div>
+              </picture>
 
               <h3 class="barbers-item-title">John Smith</h3>
               <p class="barbers-item-text">Extreme Barber</p>
@@ -343,12 +374,35 @@
               </ul>
             </li>
             <li class="barbers-item">
-              <img
-                src="./img/men2.jpg"
-                alt="Michele Doe"
-                width="370"
-                height="346"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/barber-2-desk.jpg    1x,
+                    ./img/barber-2-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/barber-2-tab.jpg    1x,
+                    ./img/barber-2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/barber-2-mob.jpg    1x,
+                    ./img/barber-2-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./img/barber-2-desk.jpg"
+                  alt="Michele Doe"
+                  width="450"
+                  height="346"
+                />
+              </picture>
               <h3 class="barbers-item-title">Michele Doe</h3>
               <p class="barbers-item-text">Extreme Barber</p>
               <ul class="barbers-soc-list list">
@@ -379,12 +433,17 @@
               </ul>
             </li>
             <li class="barbers-item">
-              <img
-                src="./img/men3.jpg"
-                alt="Alan Black"
-                width="370"
-                height="346"
-              />
+              <picture>
+                <source srcset="./img/barber-3-desk.jpg 1x, ./img/barber-3-desk-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./img/barber-3-tab.jpg 1x, ./img/barber-3-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./img/barber-3-mob.jpg 1x, ./img/barber-3-mob-2x.jpg 2x" media="(min-width: 320px)">
+                <img
+                  src="./img/barber-3-desk.jpg"
+                  alt="Alan Black"
+                  width="450"
+                  height="346"
+                />
+              </picture>
               <h3 class="barbers-item-title">Alan Black</h3>
               <p class="barbers-item-text">Extreme Barber</p>
               <ul class="barbers-soc-list list">
@@ -416,10 +475,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- gallery DONE -->
-      <!-- <section class="gallery section">
+      <section class="gallery section">
         <div class="container gallery-container">
           <p class="gallery-pre-title pre">In latin, "barba" means "beard</p>
           <ul class="gallery-list list">
@@ -548,89 +607,98 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- online booking -->
-
-      <!-- <section class="contact-section">
-        <div class="container contact-container">
-          <div class="left-side-wrap">
-            <h2 class="title booking-title">Online-booking</h2>
-            <form class="booking-form">
-              <div class="input-booking-wrap">
-                <input
-                  type="text"
-                  placeholder="Name*"
-                  class="booking-input input"
-                  name="user-name"
-                  required
-                />
-                <input
-                  type="tel"
-                  placeholder="Phone*"
-                  class="booking-input input"
-                  name="user-tel"
-                  required
-                />
-              </div>
-              <textarea
-                name="message"
-                placeholder="Message"
-                class="input booking-textarea"
-              ></textarea>
-              <button type="button" class="form-btn btn">Send</button>
-            </form>
-          </div>
-
-          <div class="right-side-wrap">
-            <h2 class="title booking-title">Contacts</h2>
-            <address class="footer-address">
-              <ul class="list footer-contact-list">
-                <li class="item footer-contact-item">
-                  <svg class="address-icon" width="24" height="24">
-                    <use href="./img/icons.svg#icon-map"></use>
-                  </svg>
-                  <a
-                    href="https://goo.gl/maps/4n9zvAbYBZgLY6wM8"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    class="address-link"
-                  >
-                    st. Vasilkivska, 7A
-                    <br />
-                    Kyiv, 02000
-                  </a>
-                </li>
-
-                <li class="item footer-contact-item">
-                  <svg class="contact-icon" width="24" height="24">
-                    <use href="./img/icons.svg#icon-phone"></use>
-                  </svg>
-                  <a href="tel:+380441111111" class="footer-contact-link"
-                    >+380441111111</a
-                  >
-                </li>
-                <li class="item footer-contact-item">
-                  <svg class="contact-icon" width="24" height="24">
-                    <use href="./img/icons.svg#icon-mail"></use>
-                  </svg>
-                  <a
-                    href=" mailto:barbershop@gmail.com"
-                    class="footer-contact-link"
-                    >barbershop@gmail.com</a
-                  >
-                </li>
-              </ul>
-            </address>
-
-            <p class="contact-text">Working hours</p>
-            <p class="contact-second-text">Every day from 9:00 to 22:00</p>
-          </div>
-        </div>
-      </section> -->
+      <div class="booking-contact-wrap">
+     <div>
+       
+            <section class="booking-section section">
+                 <div class="booking-container container">
+                  <h2 class="title booking-title">Online-booking</h2>
+                  <form class="booking-form">
+                    <div class="input-booking-wrap">
+                      <input
+                        type="text"
+                        placeholder="Name*"
+                        class="booking-input input"
+                        name="user-name"
+                        required
+                      />
+                      <input
+                        type="tel"
+                        placeholder="Phone*"
+                        class="booking-input input"
+                        name="user-tel"
+                        required
+                      />
+                    </div>
+                    <textarea
+                      name="message"
+                      placeholder="Message"
+                      class="input booking-textarea"
+                    ></textarea>
+                    <button type="button" class="form-btn btn">Send</button>
+                  </form>
+                         </section>
+       
+     </div>
+                    <div>
+                      <section class="contact-section section">
+                                      <div class=" contact-container container">
+                                        <h2 class="title booking-title">Contacts</h2>
+                      <div class="contact-wrap">
+                        <div>
+                          <address class="footer-contact-address">
+                            <ul class="list footer-contact-list">
+                              <li class="item footer-contact-item">
+                                <svg class="address-icon" width="24" height="24">
+                                  <use href="./img/icons.svg#icon-map"></use>
+                                </svg>
+                                <a
+                                  href="https://goo.gl/maps/4n9zvAbYBZgLY6wM8"
+                                  target="_blank"
+                                  rel="noopener noreferrer nofollow"
+                                  class="address-link"
+                                >
+                              st. Vasilkovaya, 7A Kiev, 08132
+                                </a>
+                              </li>
+                              <li class="item footer-contact-item">
+                                <svg class="contact-icon" width="24" height="24">
+                                  <use href="./img/icons.svg#icon-phone"></use>
+                                </svg>
+                                <a href="tel:+380441111111" class="footer-contact-link"
+                                  >+380441111111</a
+                                >
+                              </li>
+                              <li class="item footer-contact-item">
+                                <svg class="contact-icon" width="24" height="24">
+                                  <use href="./img/icons.svg#icon-mail"></use>
+                                </svg>
+                                <a
+                                  href=" mailto:barbershop@gmail.com"
+                                  class="footer-contact-link"
+                                  >barbershop@gmail.com</a
+                                >
+                              </li>
+                            </ul>
+                          </address>
+                        </div>
+                        <div >
+                          <p class="contact-text">Working hours</p>
+                          <p class="contact-second-text">Every day from 9:00 to 22:00</p>
+                        </div>
+                      </div>
+                                  </div>
+                                      </div>
+                                         </section>
+                    </div>
+       
+    
     </main>
 
-    <!-- <footer>
+    <footer>
       <div class="container footer-container">
         <p class="copyright">&copy; Copyright 2020</p>
         <ul class="list footer-list">
@@ -654,7 +722,7 @@
           </li>
         </ul>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- MODAL -->
     <!-- <div class="backdrop is-hidden" data-modal>
@@ -793,6 +861,7 @@
       </div>
     </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
