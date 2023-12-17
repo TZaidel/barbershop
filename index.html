@@ -213,7 +213,7 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="about-btn btn">Online booking</button>
+            <button type="button" class="about-btn btn" data-modal-open>Online booking</button>
           </div>
         </div>
       </section>
@@ -265,7 +265,7 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="service-btn btn">Online booking</button>
+          <button type="button" class="service-btn btn" data-modal-open>Online booking</button>
         </div>
       </section>
 
@@ -611,8 +611,7 @@
 
       <!-- online booking -->
       <div class="booking-contact-wrap">
-     <div>
-       
+     <div>       
             <section class="booking-section section">
                  <div class="booking-container container">
                   <h2 class="title booking-title">Online-booking</h2>
@@ -638,7 +637,7 @@
                       placeholder="Message"
                       class="input booking-textarea"
                     ></textarea>
-                    <button type="button" class="form-btn btn">Send</button>
+                    <button type="submit" class="form-btn btn">Send</button>
                   </form>
                          </section>
        
@@ -694,8 +693,6 @@
                                       </div>
                                          </section>
                     </div>
-       
-    
     </main>
 
     <footer>
@@ -725,7 +722,7 @@
     </footer>
 
     <!-- MODAL -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="btn-close" data-modal-close>
           <svg class="btn-close-icon" width="10" height="10">
@@ -765,7 +762,7 @@
             <label class="input-title">Phone</label>
             <div class="input-icon-wrap">
               <input
-                type="tel"
+                type="number"
                 class="modal-input"
                 placeholder="111 111 11 11"
                 required
@@ -787,38 +784,6 @@
           </div>
 
           <div class="input-wrap">
-            <ul class="filter-list list">
-              <li class="filter-item">
-                <input
-                  type="radio"
-                  name="filter"
-                  id="all"
-                  class="filter-radio is-hidden"
-                />
-                <label for="all" class="filter-btn">All</label>
-              </li>
-              <li class="filter-item">
-                <input
-                  type="radio"
-                  name="filter"
-                  id="design"
-                  class="filter-radio is-hidden"
-                />
-                <label for="design" class="filter-btn">Design</label>
-              </li>
-              <li class="filter-item">
-                <input
-                  type="radio"
-                  name="filter"
-                  id="web"
-                  class="filter-radio is-hidden"
-                />
-                <label for="web" class="filter-btn">Web</label>
-              </li>
-            </ul>
-          </div>
-
-          <div class="input-wrap">
             <label for="comment" class="input-title">Comment</label>
             <textarea
               name="comment"
@@ -828,38 +793,10 @@
               class="modal-textarea"
             ></textarea>
           </div>
-          <div class="input-wrap">
-            <label for="today" class="input-title"> today </label>
-            <input type="radio" id="today" name="day" value="today" />
-            <label for="tomorrow" class="input-title">tomorrow</label>
-            <input type="radio" id="tomorrow" name="day" value="tomorrow" />
-          </div>
-
-          <div class="input-check-wrap">
-            <input
-              type="checkbox"
-              id="privacy"
-              name="privacy"
-              class="input-check is-hidden"
-            />
-            <label for="privacy" class="input-checkbox-title input-title"
-              >I agree with...</label
-            >
-          </div>
-
-          <div class="input-check-test-wrap">
-            <input
-              type="checkbox"
-              name="true"
-              id="true"
-              class="input-check-test is-hidden"
-            />
-            <label for="true" class="input-text">Do you want..?</label>
-          </div>
           <button type="submit" class="modal-form-btn btn">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
