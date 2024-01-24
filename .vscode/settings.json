@@ -1,3 +1,6 @@
 {
-  "liveServer.settings.port": 5503
+  "liveServer.settings.port": 5503,
+  "prettier.enableDebugLogs": true,
+  "prettier.singleAttributePerLine": true,
+  "prettier.useTabs": true
 }

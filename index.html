@@ -36,7 +36,7 @@
           </a>
           <ul class="header-list list">
             <li class="header-item">
-              <a href="" class="header-link link active">About</a>
+              <a href="#about" class="header-link link active">About</a>
             </li>
             <li class="header-item">
               <a href="#prices" class="header-link link">Prices</a>
@@ -45,14 +45,13 @@
               <a href="#barbers" class="header-link link">Barbers</a>
             </li>
             <li class="header-item">
-              <a href="" class="header-link link">Contacts</a>
+              <a href="#contacts" class="header-link link">Contacts</a>
             </li>
           </ul>
         </nav>
         <div class="header-contact">
           <a href="tel:+380506002020" class="header-tel link"
-            >+380-050-600-20-20</a
-          >
+            >+380-050-600-20-20</a>
           <button type="button" class="header-btn btn link" data-modal-open>
             Online booking
           </button>
@@ -75,7 +74,7 @@
 
             <ul class="menu-list list">
               <li class="menu-item">
-                <a href="" class="menu-link link active">About</a>
+                <a href="#about" class="menu-link link active">About</a>
               </li>
               <li class="menu-item">
                 <a href="#prices" class="menu-link link">Prices</a>
@@ -84,42 +83,17 @@
                 <a href="#barbers" class="menu-link link">Barbers</a>
               </li>
               <li class="menu-item">
-                <a href="" class="menu-link link">Contacts</a>
+                <a href="#contacts" class="menu-link link">Contacts</a>
               </li>
             </ul>
           </div>
-
-          <div>
-            <div class="menu-contact">
+          <div class="menu-contact">
               <a href="tel:+380506002020" class="menu-tel link"
                 >+380-050-600-20-20</a
               >
               <button type="button" class="menu-btn btn link" data-modal-open>
                 Online booking
               </button>
-            </div>
-            <div class="menu-social-wrap">
-              <ul class="menu-soc-list list">
-                <li class="menu-soc-item">
-                  <a
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    class="menu-soc-link link"
-                    >Instagram</a
-                  >
-                </li>
-                <li class="menu-soc-item">
-                  <a
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    class="menu-soc-link link"
-                    >Youtube</a
-                  >
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
@@ -163,8 +137,8 @@
         </div>
       </section>
 
-      <!-- about DONE+- !!!!!!!!IMG-->
-      <section class="about section">
+      <!-- about -->
+      <section class="about section" id="about">
         <div class="container about-container">
           <ul class="about-list list">
             <li class="about-item">
@@ -218,7 +192,7 @@
         </div>
       </section>
 
-      <!-- services and prices !!!!!!!!!!!!!!as soon as posible-->
+      <!-- services and prices-->
       <section class="service section" id="prices">
         <div class="container">
           <p class="service-pre-title pre">
@@ -269,7 +243,7 @@
         </div>
       </section>
 
-      <!-- INFO DONE-->
+      <!-- info -->
       <section class="info section">
         <div class="container info-container">
           <ul class="info-list list">
@@ -292,9 +266,7 @@
           </ul>
           <div class="info-wrap">
             <p class="info-pre-title pre">Old traditional school</p>
-            <h2 class="info-title title" data-aos="zoom-in-right">
-              Why people come to us?
-            </h2>
+            <h2 class="info-title title" data-aos="zoom-in-right">Why people come to us?</h2>
             <p class="info-after-title after">
               Only good things are said about us. But it's better to see and feel
               1 time than read 10 times
@@ -303,7 +275,7 @@
         </div>
       </section>
 
-      <!-- our barbers DONE-->
+      <!-- our barbers -->
       <section class="barbers section" id="barbers">
         <div class="container">
           <p class="barbers-pre-title pre">
@@ -314,7 +286,7 @@
           </h2>
           <ul class="barbers-list list">
             <li class="barbers-item">
-              <picture></picture>
+              <picture>
                 <source
                   srcset="
                     ./img/barber-1-desk.jpg    1x,
@@ -477,7 +449,7 @@
         </div>
       </section>
 
-      <!-- gallery DONE -->
+      <!-- gallery  -->
       <section class="gallery section">
         <div class="container gallery-container">
           <p class="gallery-pre-title pre">In latin, "barba" means "beard</p>
@@ -611,41 +583,41 @@
 
       <!-- online booking -->
       <div class="booking-contact-wrap">
-     <div>       
-            <section class="booking-section section">
-                 <div class="booking-container container">
-                  <h2 class="title booking-title">Online-booking</h2>
-                  <form class="booking-form">
-                    <div class="input-booking-wrap">
-                      <input
-                        type="text"
-                        placeholder="Name*"
-                        class="booking-input input"
-                        name="user-name"
-                        required
-                      />
-                      <input
-                        type="tel"
-                        placeholder="Phone*"
-                        class="booking-input input"
-                        name="user-tel"
-                        required
-                      />
-                    </div>
-                    <textarea
-                      name="message"
-                      placeholder="Message"
-                      class="input booking-textarea"
-                    ></textarea>
-                    <button type="submit" class="form-btn btn">Send</button>
-                  </form>
-                         </section>
-       
-     </div>
-                    <div>
-                      <section class="contact-section section">
-                                      <div class=" contact-container container">
-                                        <h2 class="title booking-title">Contacts</h2>
+      <div>       
+        <section class="booking-section section">
+          <div class="booking-container container">
+            <h2 class="title booking-title">Online-booking</h2>
+            <form class="booking-form">
+            <div class="input-booking-wrap">
+              <input
+                type="text"
+                placeholder="Name*"
+                class="booking-input input"
+                name="user-name"
+                required
+              />
+              <input
+                 type="tel"
+                 placeholder="Phone*"
+                 class="booking-input input"
+                 name="user-tel"
+                 required
+              />
+            </div>
+              <textarea
+                name="message"
+                placeholder="Message"
+                class="input booking-textarea"
+              ></textarea>
+              <button type="submit" class="form-btn btn">Send</button>
+            </form>
+        </section>
+      </div>
+
+      <div>
+        <section class="contact-section section" id="contacts">
+                <div class=" contact-container container">
+                   <h2 class="title booking-title">Contacts</h2>
                       <div class="contact-wrap">
                         <div>
                           <address class="footer-contact-address">
@@ -659,16 +631,15 @@
                                   target="_blank"
                                   rel="noopener noreferrer nofollow"
                                   class="address-link"
-                                >
-                              st. Vasilkovaya, 7A Kiev, 08132
+                                >st. Vasilkovaya, 7A Kiev, 08132
                                 </a>
                               </li>
                               <li class="item footer-contact-item">
                                 <svg class="contact-icon" width="24" height="24">
                                   <use href="./img/icons.svg#icon-phone"></use>
                                 </svg>
-                                <a href="tel:+380441111111" class="footer-contact-link"
-                                  >+380441111111</a
+                                <a href="tel:+3800506002020" class="footer-contact-link"
+                                  >+380-050-600-20-20</a
                                 >
                               </li>
                               <li class="item footer-contact-item">
@@ -689,10 +660,9 @@
                           <p class="contact-second-text">Every day from 9:00 to 22:00</p>
                         </div>
                       </div>
-                                  </div>
-                                      </div>
-                                         </section>
-                    </div>
+                </div>
+        </section>
+      </div>
     </main>
 
     <footer>
@@ -734,7 +704,6 @@
         <form class="modal-form">
           <div class="input-wrap">
             <label class="input-title">Email </label>
-
             <div class="input-icon-wrap">
               <input
                 type="email"

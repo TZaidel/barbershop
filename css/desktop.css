@@ -1,107 +1,97 @@
 @media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
+	.section {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
 
-  .container {
-    width: 1200px;
-  }
+	.container {
+		width: 1200px;
+	}
 
-  /* HERO */
-  .hero-container {
-    width: 1200px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  }
+	/* HERO */
+	.hero-container {
+		width: 1200px;
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	}
 
-  .hero-wrap {
-    background-image: linear-gradient(
-        rgba(25, 28, 38, 0.2),
-        rgba(25, 28, 38, 0.2)
-      ),
-      url(../img/hero-bg-desk.jpg);
-  }
+	.hero-wrap {
+		background-image: linear-gradient(
+				rgba(25, 28, 38, 0.5),
+				rgba(25, 28, 38, 0.5)
+			),
+			url(../img/hero-bg-desk.jpg);
+	}
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero-wrap {
-      background-image: linear-gradient(
-          rgba(25, 28, 38, 0.2),
-          rgba(25, 28, 38, 0.2)
-        ),
-        url(../img/hero-bg-desk-2x.jpg);
-    }
-  }
+	@media (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		.hero-wrap {
+			background-image: linear-gradient(
+					rgba(25, 28, 38, 0.5),
+					rgba(25, 28, 38, 0.5)
+				),
+				url(../img/hero-bg-desk-2x.jpg);
+		}
+	}
 
-  .hero-title {
-    font-size: 72px;
-  }
+	.hero-title {
+		font-size: 72px;
+	}
 
-  .header-contact {
-    flex-direction: row;
-    gap: 43px;
-  }
+	.header-contact {
+		flex-direction: row;
+		gap: 43px;
+	}
 
-  /* ABOUT */
-  .about-item {
-    width: 270px;
-  }
+	/* ABOUT */
+	.about-item {
+		width: 270px;
+	}
 
-  /* SERVICE */
-  .service-list {
-    width: calc((100% - 30px) / 2);
-  }
+	/* SERVICE */
+	.service-list {
+		width: calc((100% - 30px) / 2);
+	}
 
-  /* INFO */
-  .info-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 130px;
-  }
+	/* INFO */
+	.info-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 130px;
+	}
 
-  /* BARBERS */
+	/* BARBERS */
+	.barbers > .container {
+		width: 1200px;
+	}
+	.barbers-item {
+		width: calc((100% - 60px) / 3);
+	}
 
-  .barbers > .container {
-    width: 1200px;
-  }
-  .barbers-item {
-    width: calc((100% - 60px) / 3);
-  }
+	.barbers-item {
+		box-shadow: 2px 2px 5px 2px rgba(126, 126, 126, 0.229);
+	}
 
-  .barbers-item {
-    box-shadow: 2px 2px 5px 2px rgba(126, 126, 126, 0.229);
-  }
+	/* GALLERY */
+	.gallery-pre-title {
+		margin-bottom: 44px;
+	}
 
-  /* GALLERY */
+	.gallery-item {
+		width: calc((100% - 90px) / 4);
+	}
 
-  .gallery-pre-title {
-    margin-bottom: 44px;
-  }
+	/* BOOKING CONTACT */
+	.booking-contact-wrap {
+		background-color: #191c26;
+		margin-left: auto;
+		margin-right: auto;
+		background-position: right;
+		background-size: calc(50% - 15px) 100%;
+	}
 
-  .gallery-item {
-    width: calc((100% - 90px) / 4);
-  }
-
-  /* BOOKING CONTACT */
-
-  .booking-contact-wrap {
-    max-width: 1600px;
-    background-color: #191c26;
-    margin-left: auto;
-    margin-right: auto;
-
-    background-position: right;
-    background-size: calc(50% - 15px) 100%;
-  }
-
-  .booking-container {
-    min-width: 600px;
-    width: calc(50% + 15px);
-  }
-
-  .contact-container {
-    width: calc(50% + 15px);
-  }
+	.booking-container {
+		min-width: 600px;
+	}
 }
